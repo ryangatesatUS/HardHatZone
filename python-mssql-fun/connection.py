@@ -5,6 +5,7 @@ from os import environ, path
 
 print("Starting our script")
 
-engine = create_engine('mssql+pyodbc:///?odbc_connect=Driver={FreeTDS};TDS_Version=7.4;Port=1433;Database=AvailabilityManagement_Beta; Server=D40DUSGRS01.DEV.US.CORP; UID=svc.api; PWD=thi5isThepa$$word;')
+odbc_connection=""
+engine = create_engine(odbc_connection)
 
 print("Ending our script")
